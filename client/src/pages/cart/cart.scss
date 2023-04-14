@@ -1,0 +1,302 @@
+.cart {
+
+    .header {
+        background-color: rgb(9, 7, 39);
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        span {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+
+    .cartContainer {
+        width: calc(100% - 200px);
+        display: flex;
+        padding: 0 100px;
+        margin-bottom: 50px;
+        .left{
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            padding: 20px;
+            .cartItem {
+                display: flex;
+                border-bottom: 1px solid lightgray;
+                padding-bottom: 10px;
+                -webkit-box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                -moz-box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                padding: 20px;
+                gap: 20px;
+
+                .imgContainer {
+                    flex: 1;
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        object-fit: cover;
+                    }
+
+                    
+                }
+
+                .details {
+                    flex: 4;
+                    color: rgb(77, 77, 77);
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 1px solid lightgray;
+                    border-right: 1px solid lightgray;
+                    padding-left: 20px;
+
+                    .title {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+
+                    .quantity {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        
+                        .qtt {
+                            font-size: 14px;
+                            font-weight: 500;
+                            margin-bottom: 7px;
+                        }
+                        .actions {
+
+                            width: 100px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            border: 1px solid rgb(9, 7, 39);
+    
+                            span {
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                            .icon {
+                                background-color: rgb(9, 7, 39);
+                                color: white;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 20px;
+                        span {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            font-weight: 500;
+                            cursor: pointer;
+
+                            &:hover {
+                                text-decoration: underline;;
+                            }
+
+                            .icon{
+                                font-size: 20px;
+                                margin-right: 5px;
+                                color: gray;
+                            }
+                        }
+                    }
+                }
+
+                .subtotal {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    .count {
+                        font-size: 14px;
+                        font-weight: 600;
+                        background-color: rgb(9, 7, 39);
+                        color: white;
+                        padding: 5px;
+                        border-radius: 5px;
+                        text-align: center;
+                    }
+
+                    .price {
+                        font-size: 14px;
+                        font-weight: 700;
+                        background-color: green;
+                        border-radius: 5px;
+                        padding: 5px;
+                        text-align: center;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+
+            .top {
+                color: rgb(82, 82, 82);
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .summary {
+                    -webkit-box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                    -moz-box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                    box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .heading {
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+
+                    .info {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+
+                        .key,.price {
+                            font-size: 18px;
+                            font-weight: 800;
+
+                            span {
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+                        .price {
+                            font-size: 23px;
+                            color: green;
+                        }
+                    }
+
+                    button {
+                        border: none;
+                        background-color: green;
+                        color: white;
+                        padding: 5px 20px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+                }
+                .extra {
+                    -webkit-box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                    -moz-box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                    box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    span {
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        .icon {
+                            margin-right: 7px;
+                            font-size: 20px;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                -webkit-box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                -moz-box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                box-shadow: 0px 0px 31px -15px rgba(0,0,0,0.48);
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                color: rgb(125, 125, 125);
+
+                .heading {
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: center;
+                    padding-bottom: 10px;
+                    color: gray
+                }
+
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    button {
+                        border: none;
+                        background-color: green;
+                        color: white;
+                        padding: 5px 20px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+
+                    span{
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-bottom: -10px;
+                    }
+
+                    .group {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        margin-bottom: 20px;
+
+                        .input-group {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                margin-bottom: 5px;
+                                font-size: 14px;
+                            }
+
+                            input {
+                                border: none;
+                                border-bottom: 1px solid lightgray;
+                                outline: none;
+                                height: 25px;
+
+                                &::placeholder {
+                                    color: rgb(193, 193, 193);
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

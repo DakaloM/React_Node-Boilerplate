@@ -1,0 +1,108 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    background-color: #0000009a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+
+    .container {
+        width: calc(40% - 300px);        
+        height: 80%;
+        background-color: #ffffff;
+        z-index: 9999898989;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: gray;
+        padding: 20px 150px;
+        
+        .hidden {
+            display: none;
+        }
+        .top, .bottom {
+
+      
+            h1 {
+                text-transform: uppercase;
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+
+            p{
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                label {
+                    margin-bottom: 10px;
+                }
+
+                input {
+                    height: 35px;
+                    margin-bottom: 20px;
+                    background-color: transparent;
+                    border: 1px solid lightgray;
+                    outline: none;
+                    font-size: 16px;
+                    padding: 0 10px;
+                    color: rgb(121, 121, 121);
+
+                    &:focus {
+                        background-color: transparent !important;;
+                    }
+                }
+
+                button {
+                    height: 37px;
+                    border: none;
+                    margin-top: 20px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    background-color: teal;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            span {
+                font-size: 14px;
+
+                span {
+                    color: rgb(81, 81, 232);
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+
+            .icon {
+                font-size: 30px;
+                color: rgb(46, 46, 46);
+            }
+        }
+    }
+    
+}
